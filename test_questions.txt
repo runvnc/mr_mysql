@@ -1,0 +1,42 @@
+# Test Questions for Event Management System
+
+# Basic Queries
+1. "[Current date: June 1, 2024] How many events are scheduled for next month?"
+   (Tests basic date filtering and counting - should find July events)
+
+2. "[Current date: June 1, 2024] List all sessions in the upcoming AI Summit"
+   (Tests simple joins and filtering)
+
+3. "What's the total capacity for all rooms?"
+   (Tests basic aggregation)
+
+# Moderate Complexity
+4. "[Current date: June 1, 2024] Which sessions in the AI Summit (June 15-17) still have available spots?"
+   (Tests capacity calculations and multiple joins)
+
+5. "[Current date: June 1, 2024] Who is our most popular speaker based on registration numbers so far?"
+   (Tests complex joins and aggregations)
+
+6. "[Current date: June 1, 2024] Show me all sessions that are currently waitlisted"
+   (Tests status handling and multiple conditions)
+
+# Complex/Error-Prone Queries
+7. "[Current date: June 1, 2024] Find attendees registered for overlapping sessions during the upcoming AI Summit"
+   (Tests temporal logic and self-joins)
+
+8. "[Current date: June 1, 2024] What's the average attendance for our events so far?"
+   (Intentionally ambiguous - per session? per event? Tests error handling)
+
+9. "[Current date: June 1, 2024] Show me similar sessions to the Machine Learning Workshop at the AI Summit"
+   (Tests handling of undefined similarity criteria)
+
+10. "[Current date: June 1, 2024] Which rooms are usually empty during conference hours (9 AM - 5 PM) at the AI Summit?"
+    (Tests temporal ambiguity and definition of 'empty')
+
+Note: These questions test various aspects of the system:
+- Basic SQL generation
+- Date/time handling
+- Capacity calculations
+- Ambiguity resolution
+- Error handling
+- Complex joins and aggregations
