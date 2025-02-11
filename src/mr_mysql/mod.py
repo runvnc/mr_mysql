@@ -36,11 +36,6 @@ class MySQLConnection:
 async def query(sql, database=None, context=None):
     """Execute a MySQL query and return the results.
     
-    Environment variables required:
-    MYSQL_HOST - MySQL server hostname (defaults to localhost)
-    MYSQL_USER - MySQL username (defaults to root)
-    MYSQL_PASSWORD - MySQL password (required)
-    
     Parameters:
     sql - The SQL query to execute
     database - (Optional) Database name to use
